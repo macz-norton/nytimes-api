@@ -13,19 +13,27 @@ var clearButtonEl = $("#clearButton")
     console.log(clearButtonEl)
 
 //DECLARE global variables
-var searchTermElVal = searchTermEl.val()
-    console.log(searchTermElVal)
-var numberRecordsElVal = numberRecordsEl.val()
-    console.log(numberRecordsElVal)
-var startYearElVal = startYearEl.val()
-    console.log(startYearElVal)
-var endYearElVal = endYearEl.val()
-    console.log(endYearElVal)
 
 
-var APIKey = "";
+
+submitButtonEl.on("click", function() {
+        preventDefault();
+        // console.log(event)   
+        // console.log(event.target)
+        console.log(this)
+
+         var searchTermElVal = searchTermEl.val()
+        console.log(searchTermElVal)
+        var numberRecordsElVal = numberRecordsEl.val()
+        console.log(numberRecordsElVal)
+        var startYearElVal = startYearEl.val()
+        console.log(startYearElVal)
+        var endYearElVal = endYearEl.val()
+        console.log(endYearElVal)
+
+    var APIKey = "";
 // Here we are building the URL we need to query the database
-var queryURL = "" + APIKey;
+    var queryURL = "" + APIKey;
 
 
 
@@ -39,11 +47,7 @@ var queryURL = "" + APIKey;
 
 
 
-submitButtonEl.on("click", function() {
-    preventDefault();
-    // console.log(event)   
-    // console.log(event.target)
-    console.log(this)
+
 
   });
 
