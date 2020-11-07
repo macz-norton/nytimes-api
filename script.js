@@ -17,19 +17,19 @@ var cardEl = $(".card")
 
 
 
-cardEl.on("click", submitButtonEl, function() {
-        // preventDefault();
+submitButtonEl.on("click", function(event) {
+        event.preventDefault();
         // console.log(event)   
         // console.log(event.target)
         console.log(this)
 
-         var searchTermElVal = searchTermEl.val()
+        var searchTermElVal = $(searchTermEl).val().trim()
         console.log(searchTermElVal)
-        var numberRecordsElVal = numberRecordsEl.val()
+        var numberRecordsElVal = $(numberRecordsEl).val().trim()
         console.log(numberRecordsElVal)
-        var startYearElVal = startYearEl.val()
+        var startYearElVal = $(startYearEl).val().trim()
         console.log(startYearElVal)
-        var endYearElVal = endYearEl.val()
+        var endYearElVal = $(endYearEl).val().trim()
         console.log(endYearElVal)
 
     var APIKey = "EPfyF9nDGNZAqUO4ekwuINsGeFdJVfwA";
