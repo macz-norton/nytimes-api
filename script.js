@@ -7,6 +7,11 @@ var startYearEl = $("#startYear")
     console.log(startYearEl)
 var endYearEl = $("#endYear")
     console.log(endYearEl)
+var submitButtonEl = $("#submitButton")
+    console.log(submitButtonEl)
+var clearButtonEl = $("#clearButton")
+    console.log(clearButtonEl)
+
 //DECLARE global variables
 var searchTermElVal = searchTermEl.val()
     console.log(searchTermElVal)
@@ -31,3 +36,15 @@ var queryURL = "" + APIKey;
 // }).then(function(response) {
 // console.log(response)
 // }
+
+
+
+submitButtonEl.on("click", function() {
+    preventDefault();
+    // console.log(event)   
+    // console.log(event.target)
+    console.log(this)
+
+  });
+
+
