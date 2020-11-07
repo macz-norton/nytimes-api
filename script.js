@@ -11,13 +11,14 @@ var submitButtonEl = $("#submitButton")
     console.log(submitButtonEl)
 var clearButtonEl = $("#clearButton")
     console.log(clearButtonEl)
+var cardEl = $(".card")
 
 //DECLARE global variables
 
 
 
-submitButtonEl.on("click", function() {
-        preventDefault();
+cardEl.on("click", submitButtonEl, function() {
+        // preventDefault();
         // console.log(event)   
         // console.log(event.target)
         console.log(this)
@@ -31,9 +32,9 @@ submitButtonEl.on("click", function() {
         var endYearElVal = endYearEl.val()
         console.log(endYearElVal)
 
-    var APIKey = "";
+    var APIKey = "EPfyF9nDGNZAqUO4ekwuINsGeFdJVfwA";
 // Here we are building the URL we need to query the database
-    var queryURL = "" + APIKey;
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "pubyear=&api-key=" + APIKey;
 
 
 
